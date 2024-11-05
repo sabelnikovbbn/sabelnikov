@@ -1,0 +1,43 @@
+print ('Hello World')
+
+print("Выбери операцию.")
+print("1.Сложить")
+print("2.Вычесть")
+print("3.Умножить")
+print("4.Разделить")
+
+i = int(input('Выберете опцию: '))
+one = int(input('Введите число 1: '))
+two = int(input('Введите число 2: '))
+
+
+def add(x, y):
+    a = x + y
+    return a
+
+def subtract(x, y):
+    s = x - y
+    return s
+
+def multiply(x, y):
+    m = x * y
+    return m
+
+def divide(x, y):
+    d = x / y
+    return d
+
+if (i == 1):
+    a = add(one, two)
+    print (a)
+elif (i == 2):
+    s = subtract(one, two)
+    print (s)
+elif (i == 3):
+    m = multiply(one, two)
+    print (m)
+elif (i == 4):
+    d = divide(one, two)
+    print(d)
+else:
+    print ('Ошибка')
